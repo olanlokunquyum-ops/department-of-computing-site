@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Department of Computing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #263445;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #082c55;
+            color: white;
+            padding: 25px 8%;
+        }
+
+        nav {
+            background-color: #064b85;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .banner {
+            background: linear-gradient(120deg, #082c55, #0879b9);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .banner h2 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contact-info,
+        .contact-form {
+            background: white;
+            padding: 30px;
+            flex: 1;
+            min-width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000015;
+        }
+
+        h3 {
+            color: #0879b9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #0879b9;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #082c55;
+        }
+
+        footer {
+            background-color: #082c55;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Department of Computing</h1>
+        <p>Innovation • Technology • Excellence</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section class="banner">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you.</p>
+    </section>
+
+    <main class="container">
+
+        <section class="contact-info">
+            <h3>Get in Touch</h3>
+
+            <p><strong>Department:</strong> Department of Computing</p>
+
+            <p><strong>Email:</strong> computing@yourinstitution.edu</p>
+
+            <p><strong>Phone:</strong> +234 800 000 0000</p>
+
+            <p><strong>Address:</strong> Your Institution, Nigeria</p>
+
+            <p>
+                Contact us for enquiries about our academic programmes,
+                admissions and other departmental activities.
+            </p>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received in this demonstration.');">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject"
+                       placeholder="Enter message subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="5"
+                          placeholder="Write your message here"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Department of Computing. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
